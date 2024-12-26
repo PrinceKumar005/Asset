@@ -19,6 +19,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" rel="stylesheet" />
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet" />
     @yield('styles')
+
+    <style>
+        body {
+            background-image: url('/Images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 
 <body class="header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden login-page">

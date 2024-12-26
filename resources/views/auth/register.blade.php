@@ -5,9 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
+                {{-- <div class="card-header">{{ __('Register') }}</div> --}}
+                
+                <div class="card-body p-4">
+                    <h1>{{ trans('panel.site_title') }}</h1>
+    
+                    <p class="text-muted">{{ trans('global.register') }}</p>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
