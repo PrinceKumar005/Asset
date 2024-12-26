@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+    'default' => env('MAIL_MAILER', 'mailtrap'),
 
     /*
     |--------------------------------------------------------------------------
@@ -41,6 +41,15 @@ return [
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
             'username' => env('MAIL_USERNAME'),
             'password' => env('MAIL_PASSWORD'),
+        ],
+
+        'mailtrap' => [
+            'transport' => 'smtp',
+            'host' => 'sandbox.smtp.mailtrap.io',
+            'port' => 2525,
+            'encryption' => null,
+            'username' => env('MAILTRAP_USERNAME', '90c0f346dec204'),
+            'password' => env('MAILTRAP_PASSWORD', 'c4be6f45d7bdde'),
         ],
 
         'ses' => [
